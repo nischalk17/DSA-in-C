@@ -24,13 +24,13 @@ void BeforeSorting(int a[], int n)
 {
 	int i;
 	printf("Enter the values to be enterered in the array:\n");
-	for(i=0;i<n-1;i++){
+	for(i=0;i<n;i++){
 	
 	
 	
 	scanf("%d",&a[i]);
 }printf("Before Sorting\n");
-	for(i=0;i<n-1;i++){
+	for(i=0;i<n;i++){
 	printf("%d\n", a[i]);
 }
 }
@@ -39,7 +39,7 @@ void AfterSorting(int a[], int n)
 {
 		int i;
 	printf("After Sorting in Ascending order\n");
-	for(i=0;i<n-1;i++){
+	for(i=0;i<n;i++){
 	printf("The values are %d\n", a[i]);
 }
 }
@@ -59,27 +59,30 @@ int main()
 How many elements you want to enter:
 8
 Enter the values to be enterered in the array:
+10
+32
+24
+29
 5
-13
-9
-6
-34
-38
-25
+18
+39
+51
 Before Sorting
+10
+32
+24
+29
 5
-13
-9
-6
-34
-38
-25
+18
+39
+51
 After Sorting in Ascending order
+The values are 10
+The values are 24
 The values are 5
-The values are 6
-The values are 9
-The values are 13
-The values are 25
-The values are 34
-The values are 38
+The values are 18
+The values are 29
+The values are 32
+The values are 39
+The values are 51
 */
