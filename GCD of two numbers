@@ -1,0 +1,32 @@
+#include <stdio.h>
+int GCD(int, int);
+
+int main()
+{
+  int a,b,g;
+  printf("Enter any two numbers:\n");
+  scanf("%d%d",&a,&b);
+  g=GCD(a,b);
+  printf("GCD of given two numbers= %d", g);
+  return 0;
+}
+
+int GCD(int a, int b)
+{
+    if(a==0)
+        return b;
+    else if(b==0)
+        return a;
+    else
+        return (GCD(b,a%b));
+}
+
+
+
+/*  OUTPUT:
+/tmp/wLxTMNlPR7.o
+Enter any two numbers:
+12
+42
+GCD of given two numbers= 6
+*/
