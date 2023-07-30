@@ -24,7 +24,6 @@ int GCD(int a, int b)
 
 
 /*  OUTPUT:
-/tmp/wLxTMNlPR7.o
 Enter any two numbers:
 12
 42
