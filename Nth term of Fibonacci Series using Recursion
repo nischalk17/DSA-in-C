@@ -22,7 +22,7 @@ int main()
 	int n;
 	printf("Enter the value of n:\n");
 	scanf("%d",&n);
-	printf("nth Fibonacci term is:\n", );
+	printf("nth Fibonacci term is:\n",n);
 	printf("%d",fibonacci(n));
 }
 
