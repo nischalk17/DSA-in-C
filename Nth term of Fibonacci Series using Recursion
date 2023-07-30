@@ -28,5 +28,8 @@ int main()
 
 
 /*	OUTPUT:
-
+Enter the value of n:
+8
+8th Fibonacci term is:
+13
 */
