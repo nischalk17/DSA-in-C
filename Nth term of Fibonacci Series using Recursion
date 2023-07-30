@@ -1,11 +1,11 @@
-/* Fibonacci sequence is the series of numbers
+/*  Fibonacci sequence is the series of numbers
 	0,1,1,2,3,5,8,13,21,34,...
 	The first two numbers in this series are 0 and 1
 	The next number is found by adding up the two numbers before it
 	By adding the first two numbers i.e. 0 and 1, we get the third number i.e. 2 and so on...
 */
 
-//	To find nth term of Fibonacci series using Recursion:
+//  To find nth term of Fibonacci series using Recursion:
 #include<stdio.h>
 int fibonacci(int num)
 {
@@ -27,7 +27,7 @@ int main()
 }
 
 
-/*	OUTPUT:
+/* OUTPUT:
 Enter the value of n:
 8
 8th Fibonacci term is:
