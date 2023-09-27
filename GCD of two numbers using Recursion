@@ -1,16 +1,5 @@
 #include <stdio.h>
-int GCD(int, int);
-
-int main()
-{
-  int a,b,g;
-  printf("Enter any two numbers:\n");
-  scanf("%d%d",&a,&b);
-  g=GCD(a,b);
-  printf("GCD of given two numbers= %d", g);
-  return 0;
-}
-
+#include <math.h>
 int GCD(int a, int b)
 {
     if(a==0)
@@ -21,11 +10,19 @@ int GCD(int a, int b)
         return (GCD(b,a%b));
 }
 
+int main()
+{
+  int a,b;
+  printf("Enter any two numbers:\n");
+  scanf("%d%d",&a,&b);
+  printf("GCD of given two numbers= %d", GCD(a,b));
+  return 0;
+}
 
 
 /*  OUTPUT:
 Enter any two numbers:
-12
-42
-GCD of given two numbers= 6
+119
+68
+GCD of given two numbers= 17
 */
