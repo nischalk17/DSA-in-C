@@ -1,0 +1,82 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<conio.h>
+#include<time.h>
+#include<stdbool.h>
+
+
+struct node{
+	char firstname[30];
+	char lastname[30];
+	int phonenumber;
+	char bookingdate[50];
+	struct node*next;
+};
+
+typedef struct node node;
+
+node *head = NULL;
+node *newnode = (node*)malloc(sizeof(node));
+
+void userInput()
+{
+	char name1[50];
+	char name2[50];
+	int number1;
+	char date[50];
+	printf("Enter your first name:");
+	scanf("%s",name1);
+	strcpy(newnode->firstname,name1);
+	printf("Enter your last name:");
+	scanf("%s",name2);
+	strcpy(newnode->lastname,name2);
+	printf("Enter your phone number:");
+	scanf("%d",&number1);
+	newnode->phonenumber=number1;
+	printf("Enter the date to be booked:");
+	scanf("%s",date);
+	strcpy(newnode->bookingdate,date);
+	
+	if(head==NULL){
+		newnode->next=NULL;
+		head=newnode;
+	}
+	else{
+		node*ptr=head;
+		while(ptr->next!=NULL){
+			ptr=ptr->next;
+		}
+	ptr->next=newnode;	
+	newnode->next=NULL;
+	}
+	
+}
+void choice1(){
+	
+}
+int main()
+{
+	
+	printf("---Menus are---\n");
+    printf("1.Press 1 for Room Details\n2.Press 2 for Room Booking\nPress 3 For admin mode(Only for staffs)\n");
+    int choice;
+   
+       printf("Enter your choice: ");
+    do {
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	userInput();
+	return 0;
+}
